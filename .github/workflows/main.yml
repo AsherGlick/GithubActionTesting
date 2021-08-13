@@ -30,10 +30,10 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Doing a thing,
-          hub release create -m ${MESSAGE} $(date +%Y%m%d%H%M%S)
+#       - name: Run a multi-line script
+#         run: |
+#           echo Doing a thing,
+#           hub release create -m ${MESSAGE} $(date +%Y%m%d%H%M%S)
       - name: Create a file
         run: |
           echo "Hello world $(date +%Y%m%d%H%M%S)" > file.txt
